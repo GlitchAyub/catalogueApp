@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
   final imgUrl =
-      'https://img.wattpad.com/a8b510eaea8bd388dedcfe4bc1abecd5ec65c79e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f70646f5530585a7a4570514245773d3d2d313035383838313033392e313637376630646639363634323962623433323737363331383631332e676966';
+      'https://i.pinimg.com/originals/b4/ae/e6/b4aee619551c49efd46d61517756555f.gif';
 
   @override
   Widget build(BuildContext context) {
