@@ -7,7 +7,9 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Catalogue App'),),
+      appBar: AppBar(
+        title: const Text('Catalogue App'),
+      ),
       body: const Center(
         child: Text('Hello World !!'),
       ),
