@@ -1,76 +1,93 @@
 {
     "product":[
         {
-            "id":"",
-            "name":"",
-            "desc":"",
-            "price":99,
-            "color":"",
-            "image":""
+            "id":1,
+            "name":"Apple Iphone 7",
+            "desc":"Apple iPhone 7 smartphone. Announced Sep 2016. Features 4.7″ display, Apple A10 Fusion chipset, 12 MP primary camera, 7 MP front camera, 1960 mAh battery,",
+            "price":14999,
+            "color":"white",
+            "image":"https://www.hilaptop.com/userdata/public/gfx/13276.jpg"
         },
         {
-            "id":"",
-            "name":"",
-            "desc":"",
-            "price":99,
-            "color":"",
-            "image":""
+            "id":2,
+            "name":"Apple Iphone 8",
+            "desc":"Apple iPhone 8 smartphone. Announced Sep 2017. Features 4.7″ display, Apple A11 Bionic chipset, 12 MP primary camera, 7 MP front camera, 1821 mAh battery, ",
+            "price":25999,
+            "color":"white",
+            "image":"https://www.hilaptop.com/environment/cache/images/500_500_productGfx_4047.jpg"
         },
         {
-            "id":"",
-            "name":"",
-            "desc":"",
-            "price":99,
-            "color":"",
-            "image":""
+            "id":3,
+            "name":"Apple Iphone x",
+            "desc":"Apple iPhone X smartphone. Announced Sep 2017. Features 5.8″ display, Apple A11 Bionic chipset, Dual: 12 MP (f/1.8, 28mm, 1.22µm) + 12 MP primary camera, ",
+            "price":54999,
+            "color":"black",
+            "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg"
         },
         {
-            "id":"",
-            "name":"",
-            "desc":"",
-            "price":99,
+            "id":4,
+            "name":"Apple Iphone 11",
+            "desc":"Apple iPhone 11 smartphone. Announced Sep 2019. Features 6.1″ display, Apple A13 Bionic chipset, 3110 mAh battery, 256 GB storage, 4 GB RAM,",
+            "price":65999,
             "color":"",
-            "image":""
+            "image":"https://cdn.shopify.com/s/files/1/0675/5716/3324/products/ip11black2-1.webp?v=1685180321&width=600"
         },
         {
-            "id":"",
-            "name":"",
-            "desc":"",
-            "price":99,
+            "id":5,
+            "name":"Apple Iphone 12",
+            "desc":"Apple iPhone 12 ; Type, Super Retina XDR OLED, HDR10, Dolby Vision, 625 nits (HBM), 1200 nits (peak) ; Size, 6.1 inches, 90.2 cm2 (~86.0% screen-to-body ratio)",
+            "price":75999,
             "color":"",
-            "image":""
+            "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12.jpg"
         },
         {
-            "id":"",
-            "name":"",
-            "desc":"",
-            "price":99,
+            "id":6,
+            "name":"Apple Iphone 13",
+            "desc":"Apple iPhone 13 smartphone. Announced Sep 2021. Features 6.1″ display, Apple A15 Bionic chipset, 3240 mAh battery, 512 GB storage, 4 GB RAM, Ceramic Shield",
+            "price":79999,
             "color":"",
-            "image":""
+            "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg"
         },
         {
-            "id":"",
-            "name":"",
-            "desc":"",
-            "price":99,
+            "id":7,
+            "name":"Apple Iphone 14",
+            "desc":"Apple iPhone 14 ; Type, Super Retina XDR OLED, HDR10, Dolby Vision, 800 nits (HBM), 1200 nits (peak) ; Size, 6.1 inches, 90.2 cm2 (~86.0% screen-to-body ratio)",
+            "price":89999,
             "color":"",
-            "image":""
+            "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg"
         },
         {
-            "id":"",
-            "name":"",
-            "desc":"",
-            "price":99,
-            "color":"",
-            "image":""
+            "id":8,
+            "name":"Apple Iphone 11 Pro",
+            "desc":"Apple iPhone 11 Pro smartphone. Announced Sep 2019. Features 5.8″ display, Apple A13 Bionic chipset, 3046 mAh battery, 512 GB storage, 4 GB RAM,",
+            "price":59999,
+            "color":"gold",
+            "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11-pro-max-.jpg"
         },
         {
-            "id":"",
-            "name":"",
-            "desc":"",
-            "price":99,
-            "color":"",
-            "image":""
+            "id":9,
+            "name":"Apple Iphone 12 Pro",
+            "desc":"Apple iPhone 12 Pro smartphone. Announced Oct 2020. Features 6.1″ display, Apple A14 Bionic chipset, 2815 mAh battery, 512 GB storage, 6 GB RAM,",
+            "price":69999,
+            "color":"black",
+            "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro--.jpg"
+        },
+        {
+            "id":10,
+            "name":"Apple Iphone 13 Pro",
+            "desc":"Apple iPhone 13 Pro · Released 2021, September 24 · 204g, 7.7mm thickness · iOS 15, up to iOS 16.5 · 128GB/256GB/1TB storage, no card slot",
+            "price":99999,
+            "color":"grey",
+            "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg"
+        }
+        ,
+        {
+            "id":1,
+            "name":"Apple Iphone 14 Pro",
+            "desc":"Apple iPhone 14 Pro smartphone. Announced Sep 2022. Features 6.1″ display, Apple A16 Bionic chipset, 3200 mAh battery, 1024 GB storage, 6 GB RAM",
+            "price":12999,
+            "color":"white",
+            "image":"https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg"
         }
     ]
 }
