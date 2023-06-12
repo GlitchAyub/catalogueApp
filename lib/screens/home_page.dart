@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:catalogue_app/models/catalogue.dart';
 import 'package:catalogue_app/widgets/drawer.dart';
-import 'package:catalogue_app/widgets/item_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -49,11 +48,44 @@ class _HomepageState extends State<Homepage> {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: (CatalogModel.items.isNotEmpty)
-            ? ListView.builder(
+            // ? ListView.builder(
+            //     itemCount: CatalogModel.items.length,
+            //     itemBuilder: (context, index) => ItemWidget(
+            //       item: CatalogModel.items[index],
+            //     ),
+            //   )
+            ? GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 1,
+                    mainAxisSpacing: 16,
+                    crossAxisSpacing: 16),
+                itemBuilder: (context, index) {
+                  final item = CatalogModel.items[index];
+                  return Card(
+                    clipBehavior: Clip.antiAlias,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    child: GridTile(
+                      header: Container(
+                        padding: const EdgeInsets.all(10),
+                        decoration:
+                            const BoxDecoration(color: Colors.deepPurpleAccent),
+                        child: Text(item.name,
+                            style: const TextStyle(color: Colors.white)),
+                      ),
+                      footer: Container(
+                        padding: const EdgeInsets.all(10),
+                        decoration: const BoxDecoration(color: Colors.black),
+                        child: Text(
+                          ' ₹ ${item.price.toString()}',
+                          style: const TextStyle(color: Colors.white),
+                        ),
+                      ),
+                      child: Image.network(item.image),
+                    ),
+                  );
+                },
                 itemCount: CatalogModel.items.length,
-                itemBuilder: (context, index) => ItemWidget(
-                  item: CatalogModel.items[index],
-                ),
               )
             : const Center(
                 child: CircularProgressIndicator(),
