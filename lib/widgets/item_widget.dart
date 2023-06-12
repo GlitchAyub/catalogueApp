@@ -10,9 +10,7 @@ class ItemWidget extends StatelessWidget {
     return Card(
       shadowColor: Colors.blueGrey,
       child: ListTile(
-        onTap: () {
-          print('shhesh');
-        },
+        onTap: () {},
         leading: Image.network(item.image),
         title: Text(item.name),
         subtitle: Text(item.desc),
