@@ -1,9 +1,11 @@
 import 'dart:convert';
 
 import 'package:catalogue_app/models/catalogue.dart';
+import 'package:catalogue_app/utils/routes.dart';
 import 'package:catalogue_app/widgets/home_widggets/catalog_header.dart';
 import 'package:catalogue_app/widgets/home_widggets/catalog_list.dart';
 import 'package:catalogue_app/widgets/theme_data.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -41,6 +43,11 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: MyThemeData.creamColor,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () =>Navigator.pushNamed(context, MyRoutes.cartPageRoute),
+        backgroundColor: MyThemeData.darkBlueColor,
+        child: const Icon(CupertinoIcons.cart),
+      ),
       body: SafeArea(
         child: Container(
           padding: Vx.m32,
@@ -59,8 +66,3 @@ class _HomepageState extends State<Homepage> {
     );
   }
 }
-
-
-
-
-
