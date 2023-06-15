@@ -27,13 +27,14 @@ class MyThemeData {
         hintColor: ligthBlueColor,
         secondaryHeaderColor: Colors.white,
         appBarTheme: const AppBarTheme(
+          color: Colors.white,
+          elevation: 0,
+          iconTheme: IconThemeData(color: Colors.white),
+          titleTextStyle: TextStyle(
             color: Colors.white,
-            elevation: 0,
-            iconTheme: IconThemeData(color: Colors.white),
-            titleTextStyle: TextStyle(
-              color: Colors.black,
-              fontWeight: FontWeight.bold,
-            )),
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       );
 
   static Color creamColor = const Color(0xfff5f5f5);
