@@ -1,3 +1,4 @@
+import 'package:catalogue_app/models/cart.dart';
 import 'package:catalogue_app/models/catalogue.dart';
 import 'package:catalogue_app/screens/home_details.dart';
 import 'package:catalogue_app/widgets/home_widggets/catalog_image.dart';
@@ -59,14 +60,7 @@ class CatalogItem extends StatelessWidget {
                 alignment: MainAxisAlignment.spaceBetween,
                 children: [
                   " ₹ ${catalog.price}".text.bold.lg.make(),
-                  ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStatePropertyAll(context.theme.hintColor),
-                        shape: const MaterialStatePropertyAll(StadiumBorder())),
-                    child: "buy".text.make(),
-                  )
+                  AddToCart(catalog: catalog)
                 ],
               )
             ],
@@ -74,5 +68,37 @@ class CatalogItem extends StatelessWidget {
         )
       ],
     )).rounded.color(context.cardColor).square(150).make().py12();
+  }
+}
+
+class AddToCart extends StatefulWidget {
+  final catalog;
+  const AddToCart({
+    super.key,
+    this.catalog,
+  });
+
+  @override
+  State<AddToCart> createState() => _AddToCartState();
+}
+
+class _AddToCartState extends State<AddToCart> {
+  bool isAdded = false;
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: () {
+        isAdded = isAdded.toggle();
+        final _catalog = CatalogModel();
+        final _cart = CartModel();
+        _cart.catalog = _catalog;
+        _cart.add(widget.catalog);
+        setState(() {});
+      },
+      style: ButtonStyle(
+          backgroundColor: MaterialStatePropertyAll(context.theme.hintColor),
+          shape: const MaterialStatePropertyAll(StadiumBorder())),
+      child: isAdded ? const Icon(Icons.done) : "buy".text.make(),
+    );
   }
 }

@@ -1,6 +1,11 @@
 import 'package:catalogue_app/models/catalogue.dart';
 
 class CartModel {
+// singleton class
+  static final cartModel = CartModel._internal();
+  CartModel._internal();
+  factory CartModel() => cartModel;
+
   // catalog field
   late CatalogModel _catalog;
 
