@@ -49,7 +49,7 @@ class _HomepageState extends State<Homepage> {
           CupertinoIcons.cart,
           color: Colors.white,
         ),
-      ),
+      ).badge(color: Vx.red500, size: 20, count: 0),
       body: SafeArea(
         child: Container(
           padding: Vx.m32,
